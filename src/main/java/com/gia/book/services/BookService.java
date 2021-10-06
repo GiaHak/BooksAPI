@@ -3,13 +3,15 @@ package com.gia.book.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.gia.book.models.BookModel;
 import com.gia.book.repositories.BookRepository;
-
+@Service
 public class BookService {
     // adding the book repository as a dependency
     private final BookRepository bookRepository;
-    
+    	
     public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
